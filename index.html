@@ -53,12 +53,12 @@
     }
     .sidebar-nav a:hover, .sidebar-nav a.active { color: var(--teal); background: rgba(0,194,178,0.08); }
     .sidebar-divider { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
-    .sidebar-links { display: flex; flex-direction: column; gap: 0.5rem; margin-top: auto; }
+    .sidebar-links { display: flex; flex-direction: column; gap: 0.6rem; margin-top: auto; }
     .sidebar-link {
-      display: flex; align-items: center; gap: 0.6rem; font-size: 12px;
-      color: var(--muted); text-decoration: none; transition: color 0.2s; padding: 0.2rem 0; word-break: break-all;
+      display: block; font-size: 13.5px;
+      color: #8fb3f5; text-decoration: none; transition: color 0.2s; padding: 0.1rem 0;
     }
-    .sidebar-link:hover { color: var(--teal); }
+    .sidebar-link:hover { color: var(--teal); text-decoration: underline; }
 
     /* MAIN */
     .main { margin-left: 280px; flex: 1; height: 100vh; overflow-y: auto; scroll-behavior: smooth; }
@@ -198,10 +198,10 @@
 
     /* CONTACT */
     .contact-note { font-size: 14.5px; color: rgba(255,255,255,0.55); margin-bottom: 1.8rem; line-height: 1.7; max-width: 500px; }
-    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 0.9rem; }
-    .contact-item { display: flex; align-items: center; gap: 0.85rem; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.3rem; text-decoration: none; color: rgba(255,255,255,0.65); font-size: 13px; font-weight: 500; transition: all 0.2s; overflow: hidden; }
-    .contact-item:hover { border-color: var(--teal); color: var(--teal); }
-    .contact-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .contact-grid { display: flex; flex-wrap: wrap; gap: 1.8rem; }
+    .contact-item { text-decoration: none; color: #8fb3f5; font-size: 15px; font-weight: 500; transition: color 0.2s; }
+    .contact-item:hover { color: var(--teal); text-decoration: underline; }
+    .contact-label { }
 
     /* REVEAL */
     .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
@@ -246,12 +246,12 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
     <hr class="sidebar-divider"/>
-    <div class="sidebar-section-label">Connect</div>
+    <div class="sidebar-section-label">Profiles</div>
     <div class="sidebar-links">
-      <a class="sidebar-link" href="mailto:snehalsanjaymore@gmail.com">✉️ snehalsanjaymore@gmail.com</a>
-      <a class="sidebar-link" href="https://www.linkedin.com/in/snehal-more-12a31614b/" target="_blank">💼 LinkedIn</a>
-      <a class="sidebar-link" href="https://snehalsanjaymore.github.io" target="_blank">🌐 Portfolio</a>
-      <a class="sidebar-link" href="tel:+4555206077">📞 +45 55 20 60 77</a>
+      <a class="sidebar-link" href="mailto:snehalsanjaymore@gmail.com">Gmail</a>
+      <a class="sidebar-link" href="https://www.linkedin.com/in/snehal-more-12a31614b/" target="_blank">LinkedIn</a>
+      <a class="sidebar-link" href="https://snehalsanjaymore.github.io" target="_blank">GitHub</a>
+      <a class="sidebar-link" href="tel:+4555206077">Phone</a>
     </div>
   </aside>
 
@@ -336,10 +336,11 @@
             <div class="exp-title">Business Development &amp; Sales Manager</div>
             <div class="exp-company">FinVachi Technologies Pvt. Ltd.</div>
             <ul class="exp-bullets">
-              <li>Closed 15+ new clients/month in algorithmic trading against a 250k INR target — 17% lead-to-customer conversion rate, above team average.</li>
-              <li>Owned the full relationship from first contact through onboarding into long-term account growth.</li>
+              <li>Identified new business acquisition in algorithmic trading; consistently achieved 15+ new client acquisitions per month, overachieving revenue targets by an average of 20%+.</li>
+              <li>Hit a 17% lead-to-customer conversion rate, above the team average.</li>
+              <li>Owned the relationship from first contact through onboarding and into long-term account growth.</li>
               <li>Ran client training sessions that improved retention and opened up natural upselling opportunities.</li>
-              <li>Collaborated cross-functionally with product and support to ensure offerings matched client needs.</li>
+              <li>Worked closely with product and support teams to make sure what we offered actually matched what clients needed.</li>
             </ul>
           </div>
         </div>
@@ -349,10 +350,11 @@
             <div class="exp-title">Business Manager – Assistant Manager</div>
             <div class="exp-company">FinoFY Technologies Pvt. Ltd.</div>
             <ul class="exp-bullets">
-              <li>Grew revenue through new partnerships and active investor onboarding support.</li>
-              <li>Maintained an active pipeline through consistent prospecting and follow-up; managed end-to-end from lead qualification to account activation.</li>
+              <li>Grew revenue through new partnerships and by supporting investor onboarding.</li>
+              <li>Kept an active pipeline through consistent prospecting and follow-up.</li>
               <li>Focused on retention by staying close to clients and addressing issues before they became problems.</li>
-              <li>Used Salesforce daily to track performance, manage client data, and optimise conversion rates.</li>
+              <li>Managed the sales process end-to-end, from qualifying leads to account activation.</li>
+              <li>Used Salesforce daily to track performance, client data, and conversion rates.</li>
             </ul>
           </div>
         </div>
@@ -362,9 +364,10 @@
             <div class="exp-title">Senior Client Relationship Manager</div>
             <div class="exp-company">CapitalVia Global Research Limited</div>
             <ul class="exp-bullets">
-              <li>Primary point of contact for high-net-worth individual (HNI) clients, maintaining consistently high service standards.</li>
-              <li>Hit 10 new clients/month at 200k INR with above-average conversion through consultative engagement.</li>
-              <li>Identified upsell opportunities that deepened relationships and increased account value.</li>
+              <li>Acted as main point of contact for high-net-worth individual (HNI) clients.</li>
+              <li>Achieved and exceeded monthly acquisition targets of 10 new clients; surpassed revenue goals by up to 15% through consultative engagement, maintaining above-average conversion rates throughout.</li>
+              <li>Identified upsell opportunities that made sense for the client, not just the numbers.</li>
+              <li>Kept retention strong by staying genuinely engaged with each client's goals.</li>
             </ul>
           </div>
         </div>
@@ -374,8 +377,8 @@
             <div class="exp-title">Client Acquisition Manager</div>
             <div class="exp-company">CapitalVia Global Research Limited</div>
             <ul class="exp-bullets">
-              <li>Managed the full acquisition lifecycle across calls, email, and chat — consistently beat 7 new clients/month at 150k INR.</li>
-              <li>Maintained 15%+ conversion rate and simplified onboarding so new clients reached value faster.</li>
+              <li>Managed full client acquisition lifecycle from first contact through onboarding across call, email, and chat; consistently exceeded targets of 7 new clients/month with a 15%+ conversion rate, overachieving assigned revenue targets each month.</li>
+              <li>Streamlined onboarding processes to accelerate time-to-value for new clients.</li>
             </ul>
           </div>
         </div>
@@ -509,10 +512,10 @@
       <div class="sec-title">Get in Touch</div>
       <p class="contact-note">Always happy to connect — whether it's about fintech, sales, or life in Copenhagen.</p>
       <div class="contact-grid">
-        <a class="contact-item" href="mailto:snehalsanjaymore@gmail.com"><span>✉️</span><span class="contact-label">snehalsanjaymore@gmail.com</span></a>
-        <a class="contact-item" href="tel:+4555206077"><span>📞</span><span class="contact-label">+45 55 20 60 77</span></a>
-        <a class="contact-item" href="https://www.linkedin.com/in/snehal-more-12a31614b/" target="_blank"><span>💼</span><span class="contact-label">LinkedIn</span></a>
-        <a class="contact-item" href="https://snehalsanjaymore.github.io" target="_blank"><span>🌐</span><span class="contact-label">snehalsanjaymore.github.io</span></a>
+        <a class="contact-item" href="mailto:snehalsanjaymore@gmail.com">Gmail</a>
+        <a class="contact-item" href="https://www.linkedin.com/in/snehal-more-12a31614b/" target="_blank">LinkedIn</a>
+        <a class="contact-item" href="https://snehalsanjaymore.github.io" target="_blank">GitHub</a>
+        <a class="contact-item" href="tel:+4555206077">Phone</a>
       </div>
     </div>
 
