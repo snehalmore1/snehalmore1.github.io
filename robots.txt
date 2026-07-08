@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://snehalsanjaymore.github.io/sitemap.xml
+Sitemap: https://snehalmore1.github.io/sitemap.xml
